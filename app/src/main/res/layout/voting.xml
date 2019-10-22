@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lnr_voting">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/kab_bandung"/>
+
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_marginTop="170dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="#540A0A0A"/>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:src="@drawable/kab_bogor"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vote Stand Ini"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:background="#95FFFFFF"/>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_marginRight="5dp"
+                android:background="#BC333131"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+            <ImageButton
+                android:layout_marginRight="5dp"
+                android:background="#BC333131"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+            <ImageButton
+                android:layout_marginRight="5dp"
+                android:background="#BC333131"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_marginRight="5dp"
+                android:background="#BC333131"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+            <ImageButton
+                android:layout_marginRight="5dp"
+                android:background="#BC333131"
+                android:layout_weight="1"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
