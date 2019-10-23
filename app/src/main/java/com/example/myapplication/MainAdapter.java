@@ -47,9 +47,7 @@ public class MainAdapter extends ArrayAdapter<Team> {
         ImageView imageView = convertView.findViewById(R.id.image_view);
         TextView textView = convertView.findViewById(R.id.text_view);
 
-        if (position == 0 || position == 1)
-            imageView.setImageResource(teams[position].getrImage());
-
+        imageView.setImageBitmap(teams[position].getrImage());
         textView.setText(teams[position].getName());
 
         return convertView;

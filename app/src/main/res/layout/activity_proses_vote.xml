@@ -7,127 +7,207 @@
     android:id="@+id/lnr_voting"
     android:background="#BC333131">
 
-    <RelativeLayout
-        android:layout_gravity="center"
-        android:gravity="center"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_marginTop="200dp"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/kab_bogor" />
-
-
-    <ImageView
-        android:layout_centerInParent="true"
-        android:layout_marginTop="170dp"
-        android:layout_width="400dp"
-        android:layout_height="600dp"
-        android:layout_gravity="center"
-        android:background="#9E0A0A0A"/>
-
-    <LinearLayout
-        android:padding="20dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
+        <RelativeLayout
             android:layout_gravity="center"
-            android:layout_marginTop="70dp"
-            android:layout_width="400dp"
-            android:layout_height="250dp"
-            android:src="@drawable/kab_bogor"/>
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Vote Stand"
-            android:textAlignment="center"
-            android:textSize="40dp"
             android:gravity="center"
-            android:textColor="#000"
-            android:background="#95FFFFFF"/>
-
-        <TextView
-            android:id="@+id/txt_nama_kota"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bogor"
-            android:textAlignment="center"
-            android:textSize="40dp"
-            android:gravity="center"
-            android:textColor="#000"
-            android:background="#95FFFFFF"/>
+            android:layout_height="match_parent"
+            android:background="#9E0A0A0A">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/img_backround"-->
+<!--                android:layout_marginTop="200dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/kab_bogor" />-->
 
 
-        </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_margin="5dp"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_foto_kota"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="70dp"
+                    android:layout_width="400dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/kab_bogor"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vote Stand"
+                        android:textAlignment="center"
+                        android:textSize="40dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:background="#95FFFFFF"/>
 
-            <ImageButton
-
-                android:layout_marginRight="5dp"
-                android:background="#BC333131"
-                android:layout_weight="1"
-                android:layout_width="80dp"
-                android:layout_height="100dp"
-                android:src="@drawable/gif1"/>
-            <ImageButton
-                android:scaleType="fitXY"
-                android:layout_marginRight="5dp"
-                android:background="#BC333131"
-                android:layout_weight="1"
-                android:layout_width="80dp"
-                android:layout_height="100dp"
-                android:src="@drawable/tenor"/>
-            <ImageButton
-                android:layout_marginRight="5dp"
-                android:background="#BC333131"
-                android:layout_weight="1"
-                android:layout_width="80dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+                    <TextView
+                        android:id="@+id/txt_nama_kota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bogor"
+                        android:textAlignment="center"
+                        android:textSize="40dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:background="#95FFFFFF"/>
 
 
+                </LinearLayout>
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-            <ImageButton
-                android:layout_marginRight="5dp"
-                android:background="#BC333131"
-                android:layout_weight="1"
-                android:layout_width="80dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_insert_emoticon_black_24dp"/>
-            <ImageButton
-                android:layout_marginRight="5dp"
-                android:background="#BC333131"
-                android:layout_weight="1"
-                android:layout_width="80dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+                        <ImageButton
+                            android:id="@+id/btn_1"
+                            android:layout_marginRight="5dp"
+                            android:background="#BC333131"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="jelek"
+                            android:textColor="#fff"
+                            android:textSize="18dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
 
-        </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
+                        <ImageButton
+                            android:id="@+id/btn_2"
+                            android:layout_marginRight="5dp"
+                            android:background="#BC333131"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cukup"
+                            android:textColor="#fff"
+                            android:textSize="18dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btn_3"
+                            android:layout_marginRight="5dp"
+                            android:background="#BC333131"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="bagus"
+                            android:textColor="#fff"
+                            android:textSize="18dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btn_4"
+                            android:layout_marginRight="5dp"
+                            android:background="#BC333131"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+                        <TextView
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="mantap"
+                            android:textColor="#fff"
+                            android:textSize="18dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btn_5"
+                            android:layout_marginRight="5dp"
+                            android:background="#BC333131"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="memuaskan"
+                            android:textColor="#fff"
+                            android:textSize="18dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
     </LinearLayout>
-
-    </RelativeLayout>
 
 </ScrollView>

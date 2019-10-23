@@ -1,15 +1,17 @@
 package com.example.myapplication;
 
+import android.graphics.Bitmap;
+
 public class Team {
     private int idTeam;
     private String name;
-    private int rImage;
+    private Bitmap image;
 
     public Team() {}
 
-    public Team(String name, int rImage) {
+    public Team(String name, Bitmap rImage) {
         this.name = name;
-        this.rImage = rImage;
+        this.image = rImage;
     }
 
     public int getIdTeam() {
@@ -28,11 +30,11 @@ public class Team {
         this.name = name;
     }
 
-    public int getrImage() {
-        return rImage;
+    public Bitmap getrImage() {
+        return image;
     }
 
-    public void setrImage(int rImage) {
-        this.rImage = rImage;
+    public void setrImage(Bitmap rImage) {
+        this.image = rImage;
     }
 }

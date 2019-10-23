@@ -5,11 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:padding="20dp"
-    android:orientation="vertical"
-    >
-
-
+    android:orientation="vertical">
 
         <GridView
             android:id="@+id/grid_view"
@@ -17,14 +13,4 @@
             android:layout_height="match_parent"
             android:numColumns="2"
             />
-
-
-
-
-
-
-
-
-
-
 </LinearLayout>

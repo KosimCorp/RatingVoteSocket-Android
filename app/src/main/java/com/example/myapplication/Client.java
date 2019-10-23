@@ -11,6 +11,8 @@ public class Client {
 
     public Client (String ip, int port) throws Exception {
         socket = new Socket(ip, port);
+        socket.setKeepAlive(true);
+        socket.setReceiveBufferSize(1024 * 10);
 
         output = new ObjectOutputStream(socket.getOutputStream());
         input = new ObjectInputStream(socket.getInputStream());
@@ -24,14 +26,13 @@ public class Client {
         this.socket = socket;
     }
 
-    public void sendMessage(String input) throws Exception {
-        output.write(input.getBytes());
+    public <T> T sendMessage(String input) throws Exception {
+        output.writeObject(input);
+
+        return readMessage();
     }
 
     public <T> T readMessage() throws Exception {
-        if (input == null)
-            input = new ObjectInputStream(socket.getInputStream());
-
         return (T) input.readObject();
     }
 }
