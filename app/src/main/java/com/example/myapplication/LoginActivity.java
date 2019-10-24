@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             try {
-                                Global.client = new Client("192.168.10.112", 9999);
+                                Global.client = new Client(edt_ip.getText().toString().trim(), Integer.parseInt(edt_port.getText().toString().trim()));
 
                                 LoginActivity.this.runOnUiThread(new Runnable() {
                                     @Override
